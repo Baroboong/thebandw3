@@ -230,6 +230,11 @@ header .header__icon i {
     width: 95%;
 }
 
+.tour__ticket-item img:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
 .tour__ticket {
     padding: 32px 0;
     margin-left: 0px;
@@ -380,4 +385,8 @@ footer a:hover {
         width: 70%;
         height: auto;
     }
+}
+
+.section5 img {
+    filter: grayscale(60%);
 }
