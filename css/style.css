@@ -108,18 +108,19 @@ header .header__search:hover {
     background-color: red;
 }
 
-header .header__menu:hover {
-    background-color: #ccc;
+header .header__menu {
+    background-color: black;
+    border: none;
 }
 
-header .header__menu:hover i {
-
-    color: black;
+header .header__icon.header__menu {
+    padding: 11px 24px;
 }
 
 header .header__icon i {
     font-size: 15px;
     color: white;
+
 }
 
 .content {
