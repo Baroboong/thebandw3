@@ -1,0 +1,382 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+header {
+    height: 46.5px;
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+
+header div.d-flex {
+    justify-content: space-between;
+}
+
+header div.d-flex {
+    padding: 0;
+}
+
+header .header__list {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header .header__list li {
+    font-size: 15px;
+}
+
+header .header__list .sub-list {
+    position: relative;
+}
+
+header .header__list .sub-list:hover .header__sub-list {
+    display: block;
+}
+
+header .header__list li a {
+    letter-spacing: 1px;
+    padding: 12px 24px;
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.header__list_2 {
+    display: none;
+    background-color: black;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    left: 0;
+}
+
+.header__list_2 a {
+    width: 100%;
+    display: block;
+    padding: 12px 0px 12px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.header__list_2 a:hover {
+    background-color: #ccc;
+    color: black;
+}
+
+header .header__list li a:hover {
+    background-color: #ccc;
+    color: black;
+    cursor: pointer;
+
+}
+
+header .header__list .header__sub-list {
+    display: none;
+    position: absolute;
+    list-style-type: none;
+    top: 98%;
+    left: 0;
+    padding: 0;
+    min-width: 180px;
+    background-color: white;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+header .header__list .header__sub-list a {
+    color: black;
+}
+
+header .header__list .header__sub-list a:hover {
+    background-color: #ccc;
+}
+
+header .header__icon {
+    padding: 12px 24px;
+    text-decoration: none;
+}
+
+header .header__search:hover {
+    background-color: red;
+}
+
+header .header__menu:hover {
+    background-color: #ccc;
+}
+
+header .header__menu:hover i {
+
+    color: black;
+}
+
+header .header__icon i {
+    font-size: 15px;
+    color: white;
+}
+
+.content {
+    margin-top: 46px;
+}
+
+.section1 .carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    width: 774px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 64px 16px;
+}
+
+.band__member {
+    justify-content: space-evenly;
+    padding: 32px 0;
+}
+
+.band__member p {
+    margin: 15px 0;
+}
+
+.band__member .member-item img {
+    width: 70%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.container .title {
+    letter-spacing: 4px;
+    margin: 10px 0;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.container .span-text {
+    font-style: italic;
+    font-family: sans-serif;
+    margin: 15px 0;
+    color: black;
+    opacity: .6;
+    font-size: 15px;
+}
+
+.section3 {
+    background-color: black;
+}
+
+.section3 .span-text {
+    color: #fff;
+    margin-top: 15px;
+}
+
+.section3 .title {
+    color: white;
+}
+
+.section3 .tour__text {
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    background-color: white;
+    margin: 0;
+}
+
+.section3 .tour__text p {
+    margin: 0;
+}
+
+.section3 .tour__text:not(:last-child) span {
+    margin-left: 25px;
+    background-color: red;
+    color: white;
+    height: 25px;
+    padding: 0 5px;
+
+}
+
+.section3 .tour__text:not(:last-child) {
+    border-bottom: 1px solid #ccc;
+}
+
+.section3 .tour__text:last-child {
+    justify-content: space-between;
+}
+
+.section3 .tour__text:last-child span {
+    height: 25px;
+    width: 25px;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    font-size: 15px;
+}
+
+.tour__ticket-item {
+    /* background-color: white; */
+    padding: 0;
+}
+
+.tour__ticket-item img {
+    width: 95%;
+}
+
+.tour__ticket {
+    padding: 32px 0;
+    margin-left: 0px;
+
+}
+
+.tour__item-content {
+    padding: 15px;
+    font-size: 15px;
+    background-color: white;
+    width: 95%;
+    margin-bottom: 15px;
+}
+
+.tour__input {
+    margin-top: 15px;
+}
+
+.tour__item-content h3 {
+    font-weight: 700;
+    font-family: sans-serif;
+    font-size: 15px;
+    padding: 15px 0;
+}
+
+.tour__item-content span {
+    opacity: 0.6;
+}
+
+.tour__item-content p {
+    margin-top: 15px;
+}
+
+.tour__item-content button {
+    padding: 8px 15px;
+    border: none;
+    color: white;
+    background-color: black;
+}
+
+.tour__item-content button:hover {
+    background-color: #a7a7a7;
+    color: black;
+}
+
+.contact__info.d-flex {
+    font-size: 15px;
+    padding: 5px 0;
+    align-items: center;
+}
+
+.section4 form {
+    margin-top: 20px;
+}
+
+.contact__info.d-flex p {
+    margin: 0;
+}
+
+.form-input .row {
+    margin-bottom: 10px;
+}
+
+.form-input input {
+    width: 100%;
+    padding: 8px 15px;
+    border: 1px solid #ccc;
+
+}
+
+.form-input .col-md-12.col-sm-12.d-flex {
+    padding: 0;
+}
+
+.form-input .col-md-12.col-sm-12,
+.form-input .col-md-6.col-sm-12 {
+    padding: 0 12px;
+}
+
+.section4 .form-input {
+    margin-top: 15px;
+}
+
+.section4 .contact__button {
+    justify-content: flex-end;
+    display: flex;
+    width: 100%;
+}
+
+.section4 .contact__button {
+    margin-right: 15px;
+    margin-top: 15px;
+}
+
+.section4 .contact__button button {
+    padding: 10px 16px;
+    border: none;
+    background: black;
+    color: white;
+}
+
+.section4 .contact__button button:hover {
+    background-color: #ccc;
+    color: black;
+}
+
+.section5 img {
+    width: 100%;
+}
+
+footer {
+    padding: 64px 16px;
+}
+
+footer i {
+    font-size: 24px;
+    color: #333;
+    padding: 0 10px;
+}
+
+footer a:hover i {
+    opacity: 0.5;
+}
+
+footer div {
+    margin-bottom: 15px;
+}
+
+footer p {
+    font-size: 20px;
+}
+
+footer a {
+    /* font-size: 30px; */
+    color: black;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+}
+
+footer a:hover {
+    opacity: 0.5;
+    color: green;
+}
+
+@media (max-width:600px) {
+    .band__member .member-item img {
+        width: 70%;
+        height: auto;
+    }
+}
