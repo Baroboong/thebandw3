@@ -8,3 +8,23 @@ button.onclick = function () {
         menu2.style.display = "none"
     }
 }
+let form__body = document.querySelector(".main__form-container")
+let buttonTikets = document.querySelectorAll(".tour__ticket  button")
+let formBuy = document.querySelector(".form__buy-ticket")
+let clickClose = document.querySelectorAll(".close_form")
+function hide() {
+    formBuy.style.display = "none"
+}
+function show() {
+    formBuy.style.display = "block"
+}
+buttonTikets.forEach(x => {
+    x.addEventListener("click", show)
+})
+form__body.addEventListener("click", function (e) {
+    e.stopPropagation();
+})
+clickClose.forEach(x => {
+    x.onclick = hide;
+})
+// window.addEventListener('scroll', hide);
