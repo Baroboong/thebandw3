@@ -20,6 +20,9 @@ header {
 
 header.fixed {
     position: fixed;
+}
+
+header.black {
     background-color: black;
 }
 
