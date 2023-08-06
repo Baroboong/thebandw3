@@ -1,14 +1,18 @@
 let button = document.getElementById("header__buton")
 let menu2 = document.getElementById("navDemo")
-button.onclick = function () {
+button.onclick = function (e) {
+    e.preventDefault();
+    e.stopPropagation();
     if (menu2.style.display == "" || menu2.style.display == "none") {
         menu2.style.display = "block"
-
     }
     else {
         menu2.style.display = "none"
     }
 }
+window.addEventListener("click", () => {
+    menu2.style.display = "none"
+})
 document.querySelector(".sub-list").addEventListener("click", function (e) { e.preventDefault() })
 window.addEventListener('scroll',
     function () {
@@ -35,4 +39,13 @@ form__body.addEventListener("click", function (e) {
 })
 clickClose.forEach(x => {
     x.onclick = hide;
+})
+let header = document.querySelector("header")
+window.addEventListener("scroll", () => {
+    if (window.scrollY > header.scrollHeight) {
+        header.classList.add("fixed")
+    } else if (window.scrollY == 0) {
+        header.classList.remove("fixed")
+
+    }
 })

@@ -8,12 +8,19 @@ body {
 header {
     height: 46.5px;
     width: 100%;
-    background-color: black;
-    position: fixed;
+    background-color: rgba(0, 0, 0, 0.171);
+    position: relative;
+    border-bottom: 1px solid #333;
     top: 0;
     right: 0;
     left: 0;
-    z-index: 1;
+    z-index: 5;
+    transition: .2s ease;
+}
+
+header.fixed {
+    position: fixed;
+    background-color: black;
 }
 
 header div.d-flex {
@@ -110,7 +117,7 @@ header .header__search:hover {
 }
 
 header .header__menu {
-    background-color: black;
+    background-color: none;
     border: none;
 }
 
@@ -125,7 +132,7 @@ header .header__icon i {
 }
 
 .content {
-    margin-top: 46px;
+    margin-top: -47.5px;
 }
 
 .section1 .carousel-inner img {
@@ -502,18 +509,22 @@ footer a:hover {
     .form-main {
         margin: 0 auto;
         width: 50%;
-        
+
     }
-    .form-main .title{
+
+    .form-main .title {
         padding: 5px;
     }
-    .form-main .form__body{
+
+    .form-main .form__body {
         font-size: 13px;
     }
+
     .form-main .form__body label {
         margin: 10px 0;
     }
+
     .form-input {
-        padding: 5px;
+        padding: 10px;
     }
 }
