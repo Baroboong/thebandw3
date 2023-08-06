@@ -44,7 +44,7 @@ let header = document.querySelector("header")
 window.addEventListener("scroll", () => {
     if (window.scrollY > header.scrollHeight) {
         header.classList.add("fixed")
-    } else if (window.scrollY == 0) {
+    } else if (window.scrollY <= 0) {
         header.classList.remove("fixed")
 
     }
