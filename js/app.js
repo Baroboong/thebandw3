@@ -3,15 +3,24 @@ let menu2 = document.getElementById("navDemo")
 button.onclick = function () {
     if (menu2.style.display == "" || menu2.style.display == "none") {
         menu2.style.display = "block"
+
     }
     else {
         menu2.style.display = "none"
     }
 }
+document.querySelector(".sub-list").addEventListener("click", function (e) { e.preventDefault() })
+window.addEventListener('scroll',
+    function () {
+        if (this.innerWidth <= 575) {
+            menu2.style.display = "none"
+        }
+    });
 let form__body = document.querySelector(".main__form-container")
 let buttonTikets = document.querySelectorAll(".tour__ticket  button")
 let formBuy = document.querySelector(".form__buy-ticket")
 let clickClose = document.querySelectorAll(".close_form")
+
 function hide() {
     formBuy.style.display = "none"
 }
@@ -27,4 +36,3 @@ form__body.addEventListener("click", function (e) {
 clickClose.forEach(x => {
     x.onclick = hide;
 })
-// window.addEventListener('scroll', hide);
